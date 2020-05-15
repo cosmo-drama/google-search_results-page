@@ -5,6 +5,8 @@
         <meta charset= "UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/style.css">
+        <script src="https://kit.fontawesome.com/e51ac42c97.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="top-container">
@@ -13,12 +15,19 @@
             </div>
             <div class="search">
                 <form class="search-form">
-                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    <!--<svg class="search-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 width="24" height="24"
 viewBox="0 0 172 172"
 style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#cccccc"><path d="M95.04232,106.54818l17.77669,17.77669c-2.7155,5.17904 -2.99544,10.33008 -0.13998,13.18555l32.44597,32.44597c4.08724,4.08724 12.98958,1.84765 19.82031,-5.01107c6.85872,-6.85872 9.09831,-15.73307 5.01107,-19.82031l-32.41797,-32.44597c-2.88346,-2.85547 -8.0345,-2.57552 -13.21354,0.11198l-17.77669,-17.74869zM60.91667,0c-33.64974,0 -60.91667,27.26693 -60.91667,60.91667c0,33.64974 27.26693,60.91667 60.91667,60.91667c33.64974,0 60.91667,-27.26692 60.91667,-60.91667c0,-33.64974 -27.26692,-60.91667 -60.91667,-60.91667zM60.91667,107.5c-25.72722,0 -46.58333,-20.85612 -46.58333,-46.58333c0,-25.72722 20.85612,-46.58333 46.58333,-46.58333c25.72722,0 46.58333,20.85612 46.58333,46.58333c0,25.72722 -20.85612,46.58333 -46.58333,46.58333z"></path></g></g></svg>
+                    -->
+                    <div class="searching">
+                    <i class="fas fa-search"></i>
+                    </div>
                     <input class="search-bar" type="text" name="search">
                     <img title="Search by Voice" class="search-mic" src="https://img.icons8.com/android/24/000000/microphone.png"/>
+                    <div class="clear">
+                    <i class="fas fa-times"></i>
+                    </div>
                 </form>
             </div>
             <nav id="top">
@@ -63,15 +72,28 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
                     
                 </ul>
             </nav>
+            <div class="border">
+
+            </div>
         </div>
         <div class="main">
-            <p>search results will go here</p>
+            <div class="results">
+                <p>About 96,000,000 results (0.57 seconds) </p>
+            </div>
+            <div class="featured-snippets">
+            <p id="snippet-p">TO CREATE A <strong>WEBSITE</strong> WITH WORDPRESS (OR JOOMLA & DRUPAL), USE ONE CLICK INSTALLATION:
+                 Log in to your hosting account. Go to your control panel. 
+                 Look for the “WordPress” or “Website” icon. Choose the domain where you want to 
+                 install your website.</p>
+            <p id="linked-link">github-user.github.io <i class="fas fa-chevron-right"></i> google-search results <i class="fas fa-sort-down"></i></p>
+            <a id="actual-link" href="#">build this webpage - GitHub Pages</a>
+            </div>
         </div>  
         <div class="logo-2">
-            <img src="images/gooooogle.png"
-        </div>  
+            <img src="images/gooooogle.png">
+        </div>
             
-            <footer id="footy">
+            <footer id="footer">
                 <nav id="bottom">
                     <ul>
                         <div class="location">
