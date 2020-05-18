@@ -21,7 +21,7 @@ img {
 }
 
 .logo, .search {
-    position: fixed;
+    position: relative;
     display: inline-block;
 }
 
@@ -29,12 +29,11 @@ img {
     top: -46px;
     left: -200px;
     transform: scale(.18,.18);
-    
+    cursor: pointer;  
 }
 
-
 .search {
-    top: 30px;
+    top: -160px;
     left: 160px;
     min-width: 100px;
     display: block;
@@ -42,6 +41,7 @@ img {
 
  .search-mic, .clear {
     position: absolute;
+    cursor: pointer;
     
 }
 
@@ -58,25 +58,26 @@ img {
     position: absolute;
     top: 12px;
     font-size: 16px;
-    right: 26px;
     color: #4285F4;
+    cursor: pointer;
 }
 
 
 .search-mic {
-    top: 14px;
-    width: 38px;
-    right: 60px;
-    border-left: 1px solid grey;
+    top: 12px;
+    width: 36px;
+    border-left: 1px solid lightgray;
     padding-left: 20px;
+    cursor: pointer;
     
 }
 
 .clear{
     top: 12px;
-    right: 115px;
     font-size: 20px;
+    font-weight: 1px;
     color: grey;
+    cursor: pointer;
 }
 
 #top {
@@ -90,7 +91,7 @@ img {
 
 .border {
     position: relative;
-    top: 85px;
+    top: 77px;
     border-bottom: 1px solid #ebebeb;
     padding-bottom: 20px;
 }
@@ -100,15 +101,44 @@ li {
     display: inline;
     padding: 10px;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+#color-search {
+    transform: scale(.14, .14);
+    display: inline-block;
+    position: fixed;
+    top: 36px;
+    left: 115px;
+    cursor: pointer;
+}
+
+#news{
+    font-size: 13px;
+    color: #5f6368;
+    cursor: pointer;
+}
+
+#shopping, #more, #videos, #maps{
+    color: #5f6368;
+    cursor: pointer;
+}
+
+#all{
+    border-bottom: 4px solid #4285F4;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    
+}
+
 .move-middle, .move-right {
     display: inline;
+    cursor: pointer;
 }
 .move-right{
-    position: fixed;
+    position: relative;
     right: 0;
     top: 29px;
     margin-right: 10px;
@@ -117,6 +147,13 @@ a {
 .move-middle {
     position: fixed;
     right: 590px;
+}
+
+#tools:hover{
+    border: 1px solid #70757a;
+    background-color: #ebebeb;
+    border-radius: 2px;
+    padding: 6px 10px;
 }
 
 .sign-in-btn {
@@ -131,10 +168,14 @@ a {
 }
 .square-menu {
     cursor: pointer;
+    width: 22px;
 }
 
 .square-menu:hover {
-    box-shadow: 2px 2px 2px gray;
+    background-color: gray;
+    border: 1px solid #5f6368;
+    border-radius: 100px;
+    
 }
 
 .main {
@@ -180,9 +221,75 @@ a {
     display: block;
 }
 
+.mini-bar {
+    position: relative;
+    top: 8px;
+    left: 400px;
+}
 
+#question, #exclamation {
+    color: #70757a;
+}
+
+#about-fs {
+    font-size: 12px;
+    color: #70757a;
+    display: inline-block;
+    padding-right: 22px;
+}
+
+.people-also-ask{
+    position: relative;
+    top: 10px;
+    max-width: 655px;
+    border: 1px solid #ebebeb;
+    border-bottom: none;
+}
+
+.people-also-ask li {
+    display: block;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 16px;
+}
+
+#down {
+    position: relative;
+    right: -200px;
+}
+
+#head {
+    font-size: 20px;  
+}
+
+.feedback{
+    font-style: italic;
+    color: #5f6368;
+    font-size: 12px;
+    position: relative;
+    padding-top: 10px;
+    left: 600px;
+}
+.search-results {
+    max-width: 550px;
+}
+
+.search-results a {
+    font-size: 20px;
+    color: #1a0dab;
+}
+
+.search-results p {
+    color:#202124;
+}
+
+#summary {
+    font-size: 14px;
+    color: #4d5156;
+    padding-bottom: 4px;
+}
+/*
 .logo-2 {
-    position: fixed;
+    position: relative;
     bottom: 20px;
     transform: scale(.5, .5);
 }
