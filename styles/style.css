@@ -2,6 +2,11 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    
+}
+
+body {
+    overflow-x: hidden;
 }
 
 html {
@@ -20,23 +25,36 @@ img {
     height: auto;
 }
 
-.logo, .search {
+.top-container {
     position: relative;
+    top:0;
+}
+
+.logo, .search {
+    position: absolute;
     display: inline-block;
 }
 
 .logo {
-    top: -46px;
+    top: -60px;
     left: -200px;
-    transform: scale(.18,.18);
+    transform: scale(.17,.17);
     cursor: pointer;  
 }
 
 .search {
-    top: -160px;
+    top: 10px;
     left: 160px;
-    min-width: 100px;
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
     display: block;
+}
+
+.search-form{
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
 }
 
  .search-mic, .clear {
@@ -57,6 +75,7 @@ img {
     display: inline-block;
     position: absolute;
     top: 12px;
+    right: -180px;
     font-size: 16px;
     color: #4285F4;
     cursor: pointer;
@@ -66,6 +85,7 @@ img {
 .search-mic {
     top: 12px;
     width: 36px;
+    right: -130px;
     border-left: 1px solid lightgray;
     padding-left: 20px;
     cursor: pointer;
@@ -76,14 +96,21 @@ img {
     top: 12px;
     font-size: 20px;
     font-weight: 1px;
+    right: -65px;
     color: grey;
     cursor: pointer;
 }
 
+.move-right{
+    position: absolute;
+    top: 12px;
+    right: 0px;
+}
+
 #top {
     position: relative;
-    top: 85px;
-    left: 165px;
+    top: -40px;
+    left: 55px;
 }
 #top a {
     color: #5f6368;
@@ -91,7 +118,8 @@ img {
 
 .border {
     position: relative;
-    top: 77px;
+    top: -50px;
+    width: 100%;
     border-bottom: 1px solid #ebebeb;
     padding-bottom: 20px;
 }
@@ -109,10 +137,12 @@ a {
 #color-search {
     transform: scale(.14, .14);
     display: inline-block;
-    position: fixed;
-    top: 36px;
-    left: 115px;
+    position: relative;
+    top: 60px;
+    left: 55px;
     cursor: pointer;
+    
+    
 }
 
 #news{
@@ -126,27 +156,30 @@ a {
     cursor: pointer;
 }
 
-#all{
-    border-bottom: 4px solid #4285F4;
-    padding-bottom: 9px;
-    padding-left: 20px;
-    
+.all-border{
+    display: inline-block;
+    border: 2px solid #4285F4;
+    padding-left: 12px;
+    padding-right: 28px;
+    position: relative;
+    top: 13px;
+    left: -39px;
+    margin-right: -29px;
+     
+}
+.all {
+    color: #4285F4;
 }
 
 .move-middle, .move-right {
     display: inline;
     cursor: pointer;
 }
-.move-right{
-    position: relative;
-    right: 0;
-    top: 29px;
-    margin-right: 10px;
-}
+
 
 .move-middle {
-    position: fixed;
-    right: 590px;
+    position: relative;
+    right: 0px;
 }
 
 #tools:hover{
@@ -180,13 +213,20 @@ a {
 
 .main {
     position: relative;
-    top: 100px;
-    left: 165px;
+    top: 50px;
+    margin-left: 150px;
+    max-width: 655px;
+   
+
 }
 
 .results {
     position: relative;
-    top: -20px;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    top: -90px;
+    margin-bottom: -89px;
 }
 
 .results p {
@@ -225,6 +265,8 @@ a {
     position: relative;
     top: 8px;
     left: 400px;
+    padding-bottom: 1em;
+    max-width: 500px;
 }
 
 #question, #exclamation {
@@ -232,7 +274,7 @@ a {
 }
 
 #about-fs {
-    font-size: 12px;
+    font-size: 11px;
     color: #70757a;
     display: inline-block;
     padding-right: 22px;
@@ -252,9 +294,26 @@ a {
     font-size: 16px;
 }
 
-#down {
+#down-1 {
     position: relative;
-    right: -200px;
+    right: -353px;
+    cursor: pointer;
+}
+#down-2 {
+    position: relative;
+    right: -370px;
+    cursor: pointer;
+}
+#down-3 {
+    position: relative;
+    right: -330px;
+    cursor: pointer;
+}
+
+#down-4 {
+    position: relative;
+    right: -436px;
+    cursor: pointer;
 }
 
 #head {
@@ -262,18 +321,22 @@ a {
 }
 
 .feedback{
+    display: inline-block;
     font-style: italic;
     color: #5f6368;
     font-size: 12px;
     position: relative;
-    padding-top: 10px;
+    padding-top: 5px;
     left: 600px;
+    
 }
 .search-results {
-    max-width: 550px;
+    max-width: 600px;
 }
 
 .search-results a {
+    display: block;
+    margin-top: -5px;
     font-size: 20px;
     color: #1a0dab;
 }
@@ -285,7 +348,15 @@ a {
 #summary {
     font-size: 14px;
     color: #4d5156;
-    padding-bottom: 4px;
+    padding-bottom: 20px;
+}
+#right {
+    font-size: 10px;
+}
+#down{
+    font-size: 10px;
+    position: relative;
+    top: -2px;
 }
 /*
 .logo-2 {
