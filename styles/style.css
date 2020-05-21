@@ -31,20 +31,17 @@ img {
 }
 
 .top-container {
-    margin-top: 2em;
-    position: relative;
-    top:0;
+    height: 50px;
 }
 
-.logo, .search {
+.search {
     position: absolute;
     display: inline-block;
     
 }
 
 .logo {
-    top: 20px;
-    left: 0px;
+    display: inline-block;
     width: 100px;
     cursor: pointer;  
 }
@@ -123,6 +120,7 @@ img {
 #top {
     width: 100%; 
     height: auto;
+    
     
 }
 #top a {
