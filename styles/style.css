@@ -120,11 +120,17 @@ img {
 #top {
     width: 100%; 
     height: auto;
+    margin-top: 20px;
+    margin-left: 160px;
     
     
 }
 #top a {
     color: #5f6368;
+}
+
+#all {
+    color: #4285F4 !important;
 }
 
 #top li {
@@ -147,12 +153,11 @@ a {
     color: black;
 }
 #color-search {
-    transform: scale(.14, .14);
     display: inline-block;
     position: relative;
-    top: 60px;
-    left: 55px;
     cursor: pointer;
+    width: 18px;
+    top: 4px;
 }
 
 #news{
@@ -177,9 +182,7 @@ a {
     margin-right: -29px;
      
 }
-#all a {
-    color: #4285F4;
-}
+
 
 .move-middle, .move-right {
     display: inline;
@@ -215,14 +218,14 @@ a {
     cursor: pointer;
     
 }
-.square-menu {
-    width: 26px;
+.material-icons {
+    font-size: 36px;
     cursor: hand;
+    color: gray;
 }
 
-.square-menu:hover {
-    border: 1px solid #5f6368;
-    border-radius: 100px;
+.material-icons:hover {
+    color: black;
     
 }
 
@@ -297,6 +300,10 @@ a {
     color: #70757a;
     display: inline-block;
     padding-right: 22px;
+}
+
+#about-fs:hover{
+    text-decoration: underline;
 }
 
 .people-also-ask{
@@ -408,7 +415,7 @@ a {
 
 .logo-2 {
     position: relative;
-    bottom: -40px;
+    bottom: -60px;
     transform: scale(.5, .5);
     cursor: pointer;
 }
@@ -418,8 +425,7 @@ a {
     background-color: #f2f2f2;
     width: 100%;
     position: relative;
-    bottom: -2px;
-    left: 0;
+    bottom: -10px;
 }
 
 #bottom {
